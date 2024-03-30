@@ -524,6 +524,37 @@ def generate_slice_neg_starts():
 
 generate_slice_neg_starts()
 
+def postprocess_model(model_path, inputs_shapes):
+    onnx_model = onnx.load(model_path)
+
+    def update_inputs_dims(model, input_dims):
+        """
+            This function updates the sizes of dimensions of the model's inputs to the values
+            provided in input_dims. if the dim value provided is negative, a unique dim_param
+            will be set for that dimension.
+        """
+        def update_dim(tensor, dim, i, j, dim_param_prefix):
+            dim_proto = tensor.type.tensor_type.shape.dim[j]
+            if isinstance(dim, int):
+                if dim >= 0:
+                    dim_proto.dim_value = dim
+                else:
+                    dim_proto.dim_param = dim_param_prefix + str(i) + '_' + str(j)
+            elif isinstance(dim, str):
+                dim_proto.dim_param = dim
+            else:
+                raise ValueError('Only int or str is accepted as dimension value, incorrect type: {}'.format(type(dim)))
+
+        for i, input_dim_arr in enumerate(input_dims):
+            for j, dim in enumerate(input_dim_arr):
+                update_dim(model.graph.input[i], dim, i, j, 'in_')
+
+        onnx.checker.check_model(model)
+        return model
+
+    onnx_model = update_inputs_dims(onnx_model, inputs_shapes)
+    onnx.save(onnx_model, model_path)
+
 input_2 = Variable(torch.randn(6, 6))
 custom_slice_list = [
     slice(1, 3, 1),
@@ -1114,7 +1145,33 @@ input = Variable(torch.randn(seq_len, batch, features))
 lstm = LSTM(features, hidden, batch, bidirectional=True)
 save_data_and_model("lstm_bidirectional", input, lstm)
 
+class LSTM_hidden_state_inputs(nn.Module):
 
+    def __init__(self, features, hidden, batch, num_layers=1, bidirectional=False):
+        super(LSTM_hidden_state_inputs, self).__init__()
+        self.lstm = nn.LSTM(features, hidden, num_layers, bidirectional=bidirectional)
+
+    def forward(self, x, h, c):
+        return self.lstm(x, (h, c))[0]
+
+batch = 1
+features = 16
+hidden = 8
+seq_len = 2
+num_layers = 1
+bidirectional = False
+
+lstm = LSTM_hidden_state_inputs(
+    features,
+    hidden,
+    batch,
+    num_layers=num_layers,
+    bidirectional=bidirectional
+)
+input = torch.randn(seq_len, batch, features)
+h0 = torch.randn(num_layers + int(bidirectional), batch, hidden)
+c0 = torch.randn(num_layers + int(bidirectional), batch, hidden)
+save_data_and_model_multy_inputs("lstm_init_h0_c0", lstm, input, h0, c0, export_params=True)
 
 class HiddenLSTM(nn.Module):
     def __init__(self, input_size, hidden_size, num_layers=1, is_bidirectional=False):
@@ -1916,36 +1973,6 @@ x = Variable(torch.zeros([1, 2, 2]))
 model = GatherMultiOutput()
 save_data_and_model("gather_multi_output", x, model)
 
-def postprocess_model(model_path, inputs_shapes):
-    onnx_model = onnx.load(model_path)
-
-    def update_inputs_dims(model, input_dims):
-        """
-            This function updates the sizes of dimensions of the model's inputs to the values
-            provided in input_dims. if the dim value provided is negative, a unique dim_param
-            will be set for that dimension.
-        """
-        def update_dim(tensor, dim, i, j, dim_param_prefix):
-            dim_proto = tensor.type.tensor_type.shape.dim[j]
-            if isinstance(dim, int):
-                if dim >= 0:
-                    dim_proto.dim_value = dim
-                else:
-                    dim_proto.dim_param = dim_param_prefix + str(i) + '_' + str(j)
-            elif isinstance(dim, str):
-                dim_proto.dim_param = dim
-            else:
-                raise ValueError('Only int or str is accepted as dimension value, incorrect type: {}'.format(type(dim)))
-
-        for i, input_dim_arr in enumerate(input_dims):
-            for j, dim in enumerate(input_dim_arr):
-                update_dim(model.graph.input[i], dim, i, j, 'in_')
-
-        onnx.checker.check_model(model)
-        return model
-
-    onnx_model = update_inputs_dims(onnx_model, inputs_shapes)
-    onnx.save(onnx_model, model_path)
 
 class UnsqueezeAndConv(nn.Module):
     def __init__(self):
