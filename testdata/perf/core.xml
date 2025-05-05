@@ -74298,7 +74298,7 @@
       <cols>1</cols>
       <dt>d</dt>
       <data>
-        686085350699.6875</data></val></n></Size_MatType_NormType_norm2--norm2---640x480--32SC1--NORM_L2->
+        970060889628.16809</data></val></n></Size_MatType_NormType_norm2--norm2---640x480--32SC1--NORM_L2->
 <Size_MatType_NormType_norm2--norm2---640x480--32SC1--NORM_INF-NORM_RELATIVE->
   <n>
     <kind>131072</kind>
@@ -74328,7 +74328,7 @@
       <cols>1</cols>
       <dt>d</dt>
       <data>
-        0.9989832690995214</data></val></n></Size_MatType_NormType_norm2--norm2---640x480--32SC1--NORM_L2-NORM_RELATIVE->
+        1.4124694511521783</data></val></n></Size_MatType_NormType_norm2--norm2---640x480--32SC1--NORM_L2-NORM_RELATIVE->
 <Size_MatType_NormType_norm2--norm2---640x480--64FC1--NORM_INF->
   <n>
     <kind>131072</kind>
@@ -74598,7 +74598,7 @@
       <cols>1</cols>
       <dt>d</dt>
       <data>
-        1190405540474.1685</data></val></n></Size_MatType_NormType_norm2--norm2---1280x720--32SC1--NORM_L2->
+        1682817186046.7009</data></val></n></Size_MatType_NormType_norm2--norm2---1280x720--32SC1--NORM_L2->
 <Size_MatType_NormType_norm2--norm2---1280x720--32SC1--NORM_INF-NORM_RELATIVE->
   <n>
     <kind>131072</kind>
@@ -74628,7 +74628,7 @@
       <cols>1</cols>
       <dt>d</dt>
       <data>
-        1.0003105800521441</data></val></n></Size_MatType_NormType_norm2--norm2---1280x720--32SC1--NORM_L2-NORM_RELATIVE->
+        1.4140893823676055</data></val></n></Size_MatType_NormType_norm2--norm2---1280x720--32SC1--NORM_L2-NORM_RELATIVE->
 <Size_MatType_NormType_norm2--norm2---1280x720--64FC1--NORM_INF->
   <n>
     <kind>131072</kind>
@@ -74898,7 +74898,7 @@
       <cols>1</cols>
       <dt>d</dt>
       <data>
-        1785221806820.7319</data></val></n></Size_MatType_NormType_norm2--norm2---1920x1080--32SC1--NORM_L2->
+        2524920038219.5913</data></val></n></Size_MatType_NormType_norm2--norm2---1920x1080--32SC1--NORM_L2->
 <Size_MatType_NormType_norm2--norm2---1920x1080--32SC1--NORM_INF-NORM_RELATIVE->
   <n>
     <kind>131072</kind>
@@ -74928,7 +74928,7 @@
       <cols>1</cols>
       <dt>d</dt>
       <data>
-        0.99998239458335447</data></val></n></Size_MatType_NormType_norm2--norm2---1920x1080--32SC1--NORM_L2-NORM_RELATIVE->
+        1.4143203809765383</data></val></n></Size_MatType_NormType_norm2--norm2---1920x1080--32SC1--NORM_L2-NORM_RELATIVE->
 <Size_MatType_NormType_norm2--norm2---1920x1080--64FC1--NORM_INF->
   <n>
     <kind>131072</kind>
@@ -75198,7 +75198,7 @@
       <cols>1</cols>
       <dt>d</dt>
       <data>
-        108894236252.82883</data></val></n></Size_MatType_NormType_norm2--norm2---127x61--32SC1--NORM_L2->
+        154161559013.55878</data></val></n></Size_MatType_NormType_norm2--norm2---127x61--32SC1--NORM_L2->
 <Size_MatType_NormType_norm2--norm2---127x61--32SC1--NORM_INF-NORM_RELATIVE->
   <n>
     <kind>131072</kind>
@@ -75228,7 +75228,7 @@
       <cols>1</cols>
       <dt>d</dt>
       <data>
-        0.99771678017926213</data></val></n></Size_MatType_NormType_norm2--norm2---127x61--32SC1--NORM_L2-NORM_RELATIVE->
+        1.4124675426283413</data></val></n></Size_MatType_NormType_norm2--norm2---127x61--32SC1--NORM_L2-NORM_RELATIVE->
 <Size_MatType_NormType_norm2--norm2---127x61--64FC1--NORM_INF->
   <n>
     <kind>131072</kind>
@@ -75498,7 +75498,7 @@
       <cols>1</cols>
       <dt>d</dt>
       <data>
-        686085350699.6875</data></val></n></Size_MatType_NormType_norm2_mask--norm2_mask---640x480--32SC1--NORM_L2->
+        970060889628.16809</data></val></n></Size_MatType_NormType_norm2_mask--norm2_mask---640x480--32SC1--NORM_L2->
 <Size_MatType_NormType_norm2_mask--norm2_mask---640x480--32SC1--NORM_INF-NORM_RELATIVE->
   <n>
     <kind>131072</kind>
@@ -75528,7 +75528,7 @@
       <cols>1</cols>
       <dt>d</dt>
       <data>
-        0.9989832690995214</data></val></n></Size_MatType_NormType_norm2_mask--norm2_mask---640x480--32SC1--NORM_L2-NORM_RELATIVE->
+        1.4124694511521783</data></val></n></Size_MatType_NormType_norm2_mask--norm2_mask---640x480--32SC1--NORM_L2-NORM_RELATIVE->
 <Size_MatType_NormType_norm2_mask--norm2_mask---640x480--64FC1--NORM_INF->
   <n>
     <kind>131072</kind>
@@ -75798,7 +75798,7 @@
       <cols>1</cols>
       <dt>d</dt>
       <data>
-        1190405540474.1685</data></val></n></Size_MatType_NormType_norm2_mask--norm2_mask---1280x720--32SC1--NORM_L2->
+        1682817186046.7009</data></val></n></Size_MatType_NormType_norm2_mask--norm2_mask---1280x720--32SC1--NORM_L2->
 <Size_MatType_NormType_norm2_mask--norm2_mask---1280x720--32SC1--NORM_INF-NORM_RELATIVE->
   <n>
     <kind>131072</kind>
@@ -75828,7 +75828,7 @@
       <cols>1</cols>
       <dt>d</dt>
       <data>
-        1.0003105800521441</data></val></n></Size_MatType_NormType_norm2_mask--norm2_mask---1280x720--32SC1--NORM_L2-NORM_RELATIVE->
+        1.4140893823676055</data></val></n></Size_MatType_NormType_norm2_mask--norm2_mask---1280x720--32SC1--NORM_L2-NORM_RELATIVE->
 <Size_MatType_NormType_norm2_mask--norm2_mask---1280x720--64FC1--NORM_INF->
   <n>
     <kind>131072</kind>
@@ -76098,7 +76098,7 @@
       <cols>1</cols>
       <dt>d</dt>
       <data>
-        1785221806820.7319</data></val></n></Size_MatType_NormType_norm2_mask--norm2_mask---1920x1080--32SC1--NORM_L2->
+        2524920038219.5913</data></val></n></Size_MatType_NormType_norm2_mask--norm2_mask---1920x1080--32SC1--NORM_L2->
 <Size_MatType_NormType_norm2_mask--norm2_mask---1920x1080--32SC1--NORM_INF-NORM_RELATIVE->
   <n>
     <kind>131072</kind>
@@ -76128,7 +76128,7 @@
       <cols>1</cols>
       <dt>d</dt>
       <data>
-        0.99998239458335447</data></val></n></Size_MatType_NormType_norm2_mask--norm2_mask---1920x1080--32SC1--NORM_L2-NORM_RELATIVE->
+        1.4143203809765383</data></val></n></Size_MatType_NormType_norm2_mask--norm2_mask---1920x1080--32SC1--NORM_L2-NORM_RELATIVE->
 <Size_MatType_NormType_norm2_mask--norm2_mask---1920x1080--64FC1--NORM_INF->
   <n>
     <kind>131072</kind>
@@ -76398,7 +76398,7 @@
       <cols>1</cols>
       <dt>d</dt>
       <data>
-        108894236252.82883</data></val></n></Size_MatType_NormType_norm2_mask--norm2_mask---127x61--32SC1--NORM_L2->
+        154161559013.55878</data></val></n></Size_MatType_NormType_norm2_mask--norm2_mask---127x61--32SC1--NORM_L2->
 <Size_MatType_NormType_norm2_mask--norm2_mask---127x61--32SC1--NORM_INF-NORM_RELATIVE->
   <n>
     <kind>131072</kind>
@@ -76428,7 +76428,7 @@
       <cols>1</cols>
       <dt>d</dt>
       <data>
-        0.99771678017926213</data></val></n></Size_MatType_NormType_norm2_mask--norm2_mask---127x61--32SC1--NORM_L2-NORM_RELATIVE->
+        1.4124675426283413</data></val></n></Size_MatType_NormType_norm2_mask--norm2_mask---127x61--32SC1--NORM_L2-NORM_RELATIVE->
 <Size_MatType_NormType_norm2_mask--norm2_mask---127x61--64FC1--NORM_INF->
   <n>
     <kind>131072</kind>
@@ -77691,4 +77691,84 @@
       <dt>d</dt>
       <data>
         206814.52062139678</data></val></n></Size_MatType_NormType_norm_mask--norm_mask---127x61--64FC1--NORM_L2->
+ <!-- resumed -->
+
+<Size_MatType_Mat_CopyToWithMask--Mat_CopyToWithMask---1920x1080--16UC3->
+  <dst>
+    <kind>65536</kind>
+    <type>18</type>
+    <min>0.</min>
+    <max>65535.</max>
+    <last>
+      <x>1919</x>
+      <y>1079</y>
+      <val>44827.</val></last>
+    <rng1>
+      <x>428</x>
+      <y>830</y>
+      <cn>1</cn>
+      <val>56025.</val></rng1>
+    <rng2>
+      <x>1326</x>
+      <y>153</y>
+      <cn>1</cn>
+      <val>22581.</val></rng2></dst></Size_MatType_Mat_CopyToWithMask--Mat_CopyToWithMask---1920x1080--16UC3->
+<Size_MatType_Mat_CopyToWithMask--Mat_CopyToWithMask---1920x1080--32SC2->
+  <dst>
+    <kind>65536</kind>
+    <type>12</type>
+    <min>-2147482865.</min>
+    <max>2147482988.</max>
+    <last>
+      <x>1919</x>
+      <y>1079</y>
+      <val>1367426877.</val></last>
+    <rng1>
+      <x>1541</x>
+      <y>1011</y>
+      <cn>1</cn>
+      <val>-828002990.</val></rng1>
+    <rng2>
+      <x>526</x>
+      <y>84</y>
+      <val>1827645499.</val></rng2></dst></Size_MatType_Mat_CopyToWithMask--Mat_CopyToWithMask---1920x1080--32SC2->
+<Size_MatType_Mat_CopyToWithMask--Mat_CopyToWithMask---127x61--16UC3->
+  <dst>
+    <kind>65536</kind>
+    <type>18</type>
+    <min>0.</min>
+    <max>65535.</max>
+    <last>
+      <x>126</x>
+      <y>60</y>
+      <val>47427.</val></last>
+    <rng1>
+      <x>34</x>
+      <y>60</y>
+      <cn>2</cn>
+      <val>4093.</val></rng1>
+    <rng2>
+      <x>9</x>
+      <y>46</y>
+      <cn>1</cn>
+      <val>9660.</val></rng2></dst></Size_MatType_Mat_CopyToWithMask--Mat_CopyToWithMask---127x61--16UC3->
+<Size_MatType_Mat_CopyToWithMask--Mat_CopyToWithMask---127x61--32SC2->
+  <dst>
+    <kind>65536</kind>
+    <type>12</type>
+    <min>-2147020120.</min>
+    <max>2147377472.</max>
+    <last>
+      <x>126</x>
+      <y>60</y>
+      <val>-1638256053.</val></last>
+    <rng1>
+      <x>14</x>
+      <y>41</y>
+      <cn>1</cn>
+      <val>-160794729.</val></rng1>
+    <rng2>
+      <x>15</x>
+      <y>53</y>
+      <val>1576696853.</val></rng2></dst></Size_MatType_Mat_CopyToWithMask--Mat_CopyToWithMask---127x61--32SC2->
 </opencv_storage>
